@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Tic-Tac-Toe</h1>
+      <div class="controls">
+        <select id="mode">
+          <option value="pvp">2 Players</option>
+          <option value="ai">Vs Computer</option>
+        </select>
+        <button id="newRound">New Round</button>
+        <button id="resetScores">Clear Scores</button>
+      </div>
+    </header>
+
+    <div class="status">
+      <span id="turnStatus">X's turn</span>
+      <span id="gameStatus"></span>
+    </div>
+
+    <div class="board" id="board"></div>
+
+    <div class="scores">
+      <div class="score"><div class="label">X Wins</div><div id="xWins" class="value">0</div></div>
+      <div class="score"><div class="label">O Wins</div><div id="oWins" class="value">0</div></div>
+      <div class="score"><div class="label">Draws</div><div id="draws" class="value">0</div></div>
+    </div>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
